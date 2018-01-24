@@ -1,0 +1,12 @@
+spring:
+  h2:
+    console:
+      enabled: true # 默认启动程序启动
+      path: /h2 #访问路径 localhost:9100/h2
+  datasource:
+    platform: h2
+    schema: classpath*:schema_h2.sql
+    url: jdbc:h2:mem:user;MODE=mysql;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: root
+    password:
+    driverClassName: org.h2.Driver

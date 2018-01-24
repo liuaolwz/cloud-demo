@@ -1,0 +1,17 @@
+# 该配置文件负责从外部资源加载配置属性
+spring:
+  application:
+    name: config # 服务名，使用在eureka注册
+  profiles:
+    active: native # 使用本地配置（默认为git配置）
+eureka:
+  instance:
+    # 非SSL 端口，若环境变量中server.port有值，则使用环境变量的值，否则使用8888
+    non-secure-port: ${server.port:8888}
+    metadata-map:
+      # 在eureka server的实例id
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      # eureka 地址
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8008}/eureka/
