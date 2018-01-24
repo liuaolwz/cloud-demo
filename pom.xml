@@ -19,6 +19,7 @@
 		<module>user</module>
         <module>coupon</module>
         <module>commons</module>
+        <module>ui</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
