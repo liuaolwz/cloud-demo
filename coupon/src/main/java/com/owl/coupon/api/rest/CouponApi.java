@@ -1,6 +1,7 @@
 package com.owl.coupon.api.rest;
 
-import com.owl.coupon.entity.Coupon;
+
+import com.owl.common.entity.Coupon;
 
 import io.swagger.annotations.ApiOperation;
 

@@ -39,6 +39,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.owl</groupId>
+            <artifactId>commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,7 +1,7 @@
 # 该配置文件负责从外部资源加载配置属性
 spring:
   application:
-    name: config # 服务名，使用在eureka注册
+    name: CONFIG # 服务名，使用在eureka注册
   profiles:
     active: native # 使用本地配置（默认为git配置）
 eureka:

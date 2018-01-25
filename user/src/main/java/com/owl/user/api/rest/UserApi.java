@@ -1,6 +1,7 @@
 package com.owl.user.api.rest;
 
 import com.owl.user.api.request.RegisterRequest;
+import com.owl.user.entity.User;
 import com.owl.user.service.UserService;
 
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +22,7 @@ public class UserApi {
 
   @ApiOperation(value = "注册")
   @RequestMapping(method = RequestMethod.POST)
-  public String register(@Valid @RequestBody final RegisterRequest registerRequest) {
+  public User register(@Valid @RequestBody final RegisterRequest registerRequest) {
     return userService.register(registerRequest);
   }
 }

@@ -1,6 +1,6 @@
-package com.owl.user.entity;
+package com.owl.common.entity;
 
-import com.owl.user.enums.Gender;
+import com.owl.common.enums.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

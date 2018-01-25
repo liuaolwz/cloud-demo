@@ -4,5 +4,5 @@ eureka:
   instance:
     hostname: localhost
   client:
-    enabled: false
     fetch-registry: false
+    register-with-eureka: false

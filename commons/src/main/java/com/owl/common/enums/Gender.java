@@ -1,4 +1,4 @@
-package com.owl.user.enums;
+package com.owl.common.enums;
 
 import com.baomidou.mybatisplus.enums.IEnum;
 import com.fasterxml.jackson.annotation.JsonValue;

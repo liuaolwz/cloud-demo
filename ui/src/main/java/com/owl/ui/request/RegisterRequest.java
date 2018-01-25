@@ -1,18 +1,19 @@
-package com.owl.coupon.entity;
+package com.owl.ui.request;
+
+
+import com.owl.common.enums.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Coupon {
-  private Long id;
-  private BigDecimal value;
-  private Long userId;
+public class RegisterRequest {
+  private String name;
+  private Integer age;
+  private Gender gender;
 }
