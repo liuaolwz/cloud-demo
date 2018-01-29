@@ -2,7 +2,7 @@ package com.owl.user.service.impl;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.owl.user.api.request.RegisterRequest;
-import com.owl.user.entity.User;
+import com.owl.common.entity.User;
 import com.owl.user.repository.UserRepository;
 import com.owl.user.service.UserService;
 

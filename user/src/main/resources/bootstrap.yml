@@ -1,16 +1,36 @@
 spring:
   application:
     name: user
+  profiles:
+    active: test
+management:
+  security:
+    enabled: false
+---
+spring:
+  profiles: test
   # 指定config的服务名，会通过eureka发现config server
   cloud:
     config:
-      enabled: true
+      profile: ${spring.profiles.active}
       discovery:
         enabled: true
         service-id: config
 eureka:
-  instance:
-    non-secure-port: ${server.port:8083}
   client:
     service-url:
-      defaultZone: http://${eureka.host:localhost}:${eureka.port:8008}/eureka/
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8018}/eureka/
+---
+spring:
+  profiles: dev
+  # 指定config的服务名，会通过eureka发现config server
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8018}/eureka/

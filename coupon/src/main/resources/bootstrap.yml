@@ -8,6 +8,7 @@ spring:
       discovery:
         enabled: true
         service-id: config
+      profile:
 eureka:
   instance:
     non-secure-port: ${server.port:8084}

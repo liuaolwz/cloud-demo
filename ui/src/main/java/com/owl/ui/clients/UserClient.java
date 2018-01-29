@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@FeignClient
+@FeignClient("user")
 public interface UserClient {
 
-  @RequestMapping(value = "",method = RequestMethod.POST,
+  @RequestMapping(value = "/owl-user/api/user",method = RequestMethod.POST,
       produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
   @ResponseBody
   User save(@RequestBody RegisterRequest registerRequest);

@@ -1,7 +1,7 @@
 # 该配置文件负责从外部资源加载配置属性
 spring:
   application:
-    name: CONFIG # 服务名，使用在eureka注册
+    name: config # 服务名，使用在eureka注册
   profiles:
     active: native # 使用本地配置（默认为git配置）
 eureka:
@@ -14,4 +14,4 @@ eureka:
   client:
     service-url:
       # eureka 地址
-      defaultZone: http://${eureka.host:localhost}:${eureka.port:8008}/eureka/
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8018}/eureka/

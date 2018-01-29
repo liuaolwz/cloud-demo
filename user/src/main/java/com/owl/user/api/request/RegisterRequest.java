@@ -1,6 +1,7 @@
 package com.owl.user.api.request;
 
-import com.owl.user.enums.Gender;
+
+import com.owl.common.enums.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

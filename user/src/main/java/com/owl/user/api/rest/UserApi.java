@@ -1,7 +1,7 @@
 package com.owl.user.api.rest;
 
 import com.owl.user.api.request.RegisterRequest;
-import com.owl.user.entity.User;
+import com.owl.common.entity.User;
 import com.owl.user.service.UserService;
 
 import io.swagger.annotations.ApiOperation;
