@@ -15,6 +15,7 @@
         <module>commons</module>
         <module>ui</module>
         <module>monitor</module>
+        <module>zuul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

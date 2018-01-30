@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8018}/eureka/
+zuul:
+  routes:
+    user-api.path: /user/**
+    user-api.serviceId: user
+    coupon-api.path: /coupon/**
+    coupon-api.serviceId: coupon
+server:
+  port: 9999
