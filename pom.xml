@@ -13,7 +13,6 @@
 		<module>user</module>
         <module>coupon</module>
         <module>commons</module>
-        <module>ui</module>
         <module>monitor</module>
         <module>zuul</module>
     </modules>
