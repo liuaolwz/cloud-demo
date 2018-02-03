@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/owl-user/api/user")
+@RequestMapping("/api/user")
 public class UserApi {
   @Autowired
   private UserService userService;

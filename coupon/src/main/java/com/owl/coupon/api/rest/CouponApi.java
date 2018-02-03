@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/owl-coupon/api/coupon")
+@RequestMapping(value = "/api/coupon")
 public class CouponApi {
   @ApiOperation(value = "发放一张红包")
   @PostMapping

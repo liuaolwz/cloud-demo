@@ -16,6 +16,10 @@ spring:
     driverClassName: org.h2.Driver
 server:
   port: 8083
+owl:
+  zuul: http://localhost:9999
+  remote:
+    coupon: coupon/api/coupon
 #mybatis
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
